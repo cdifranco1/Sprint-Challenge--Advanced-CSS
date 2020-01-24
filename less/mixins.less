@@ -1,1 +1,27 @@
 // Mixins Here
+.flexbox(){
+    display: flex;
+}
+.space-between(){
+    justify-content: space-between;
+}
+.center(){
+    justify-content: center;
+}
+
+.flex-column(){
+    flex-direction: column;
+}
+
+.custom-btn(@bg-color: #22283A, @color: white, @width: 30%){
+    background-color: @bg-color;
+    color: @color;
+    width: @width;
+    text-align: center;
+    font-size: 1.5rem;
+    &:hover{
+        background-color: @color;
+        color: @bg-color;
+        border: 1px solid black;
+    }
+}
